@@ -19,12 +19,19 @@
     <!-- Login Form -->
     <section class="login-container">
         <h1 class="heading-primary">Login User</h1>
-        <form action="/action.php">
-            <input type="text" id="userName" placeholder="Enter username"><br><br>
-            <input type="text" id="password" placeholder="Enter password"><br><br>
-            <button class="btn btn--full" type="submit" id="loginBtn">Login</button>
+        <form id="form" class="form">
+            <div class="form-control">
+            <input type="text" id="username" placeholder="Enter username" >
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="password" placeholder="Enter password">
+            <small>Error Message</small>
+        </div>
+            <button type="submit" id="login-btn" class="btn btn--full">Login</button>
           </form>
     </section>
    <script src="./js/login.js"></script> 
 </body>
 </html>
+

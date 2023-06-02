@@ -19,13 +19,39 @@
     <!-- Login Form -->
     <section class="login-container">
         <h1 class="heading-primary">Register User</h1>
-        <form novalidate>
-            <input type="text" id="username" placeholder="Enter username"><br><br>
-            <input type="email" id="email" placeholder="Enter email"><br><br>
-            <input type="password" id="password" placeholder="Enter password"><br><br>
+        <form id="form" class="form">
+            <div class="form-control">
+            <input type="text" id="username" placeholder="Enter username" >
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="email" id="email" placeholder="Enter email">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="password" placeholder="Enter password">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="password2" placeholder="Enter password again">
+            <small>Error Message</small>
+        </div>
             <button type="submit" id="register-btn" class="btn btn--full">SignUp</button>
           </form>
     </section>
    <script src="./js/register.js"></script> 
 </body>
 </html>
+
+
+
+
+<!-- function checkLength(input, min ,max) {
+    if(input.value.length < min) {
+        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+    }else if(input.value.length > max) {
+        showError(input, `${getFieldName(input)} must be les than ${max} characters`);
+    }else {
+        showSucces(input);
+    }
+} -->
